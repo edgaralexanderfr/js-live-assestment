@@ -1,9 +1,0 @@
-{
-    "dev": {
-        "driver": "mysql",
-        "user": "root",
-        "password": "root",
-        "port": "5555",
-        "database": "js-live-assestment"
-    }
-}
