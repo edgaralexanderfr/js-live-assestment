@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+  database:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 'js-live-assestment'
+      MYSQL_PASSWORD: 'root'
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - '5555:3306'
+    expose:
+      - '3306'
+    volumes:
+      - test-volume:/var/lib/mysql
+volumes:
+  test-volume:
